@@ -16,70 +16,16 @@
     <!-- All you need to put beautiful, interactive 3D content on your site: -->
     <model-viewer src="./assets/whale.glb" ios-src="./assets/whale.usdz" poster="./assets/whale.png"
       alt="A 3D model of an whale" shadow-intensity="1" camera-controls auto-rotate ar autoplay>
-
-      <!--<div class="controls">
-        <div>Roll: <input id="roll" value="20" size="3" class="number"> degrees</div>
-        <div>Pitch: <input id="pitch" value="0" size="3" class="number"> degrees</div>
-        <div>Yaw: <input id="yaw" value="0" size="3" class="number"> degrees</div>
-        <div>
-          Scale: X: <input id="x" value="1" size="3" class="number">,
-          Y: <input id="y" value="1" size="3" class="number">,
-          Z: <input id="z" value="1" size="3" class="number">
-        </div>
-        <button id="frame">Update Framing</button>
-      </div>-->
     </model-viewer>
     <section class="attribution">
       <span>
         <h1>Whale</h1>
     </section>
-
   </div>
   <script type="module" src="./scripts/model-viewer.min.js">
   </script>
   <script nomodule src="./scripts/model-viewer-legacy.js">
   </script>
-  <!--<script>
-    const modelViewerTransform = document.querySelector("model-viewer#transform");
-    const roll = document.querySelector('#roll');
-    const pitch = document.querySelector('#pitch');
-    const yaw = document.querySelector('#yaw');
-    const x = document.querySelector('#x');
-    const y = document.querySelector('#y');
-    const z = document.querySelector('#z');
-    const frame = document.querySelector('#frame');
-
-    frame.addEventListener('click', () => {
-      modelViewerTransform.updateFraming();
-    });
-
-    const updateOrientation = () => {
-      modelViewerTransform.orientation = `${roll.value}deg ${pitch.value}deg ${yaw.value}deg`;
-    };
-
-    const updateScale = () => {
-      modelViewerTransform.scale = `${x.value} ${y.value} ${z.value}`;
-    };
-
-    roll.addEventListener('input', () => {
-      updateOrientation();
-    });
-    pitch.addEventListener('input', () => {
-      updateOrientation();
-    });
-    yaw.addEventListener('input', () => {
-      updateOrientation();
-    });
-    x.addEventListener('input', () => {
-      updateScale();
-    });
-    y.addEventListener('input', () => {
-      updateScale();
-    });
-    z.addEventListener('input', () => {
-      updateScale();
-    });
-  </script> -->
 </body>
 
 </html>
